@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.content {
+    padding-top: 3.23em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    position: relative;
+    box-shadow: 0 7px 10px -7px rgba(0,0,0,0.56);
+}
+
+header .logo, header .settings {
+    position: absolute;
+    display: inline;
+    top: 0;
+    padding: 1.4em;
+}
+
+header .logo {
+    left: 0;
+}
+
+header .settings {
+    right: 0;
+}
+
+header .header-title {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.menu li {
+    margin: 0.5em 0 0;
+}
+
+.menu-1 {
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
+
+.menu-1 .menu-item {
+    text-align: center;
+    width: 8em;
+    margin: 0 auto;
+    padding-bottom: 0.3em;
+}
+
+.menu-1 .menu-item.selected {
+    border-bottom: solid 0.2em lime;
+}
+
+ul.menu-2 li {
+    display: inline-block;
+}
+
+.menu-2 {
+    padding: 0.5em 0;
+    box-shadow: 0 7px 10px -7px rgba(0,0,0,0.56);
+    margin-bottom: 1em;
+}
+
+.menu-2 .menu-item {
+    margin: 0 1.5em;
+    text-transform: uppercase;
+}
+
+.portfolio .product-type, .portfolio .product-return {
+    color: darkgray;
+}
+
+.portfolio .product-name, .portfolio .asset-value {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.portfolio .asset-value {
+    text-align: right;
+}
+
+ul.portfolio li {
+    display: flow-root;
+    padding: 0.2em 0 1em;
+    border-bottom: solid 1px lightgray;
+}

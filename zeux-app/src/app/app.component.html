@@ -1,0 +1,34 @@
+<div class="fixed-header">
+  <div class="container">
+      <header class="row">
+          <div class="logo">logo</div>
+          <div class="header-title">Assets</div>
+          <div class="settings">settings</div>
+      </header>
+  </div>
+</div>
+<div class="container content">
+    <ul class="row menu menu-1">
+      <li class="col-xs-6">
+        <div class="menu-item active">My Assets</div>
+      </li>
+      <li class="col-xs-6">
+        <div class="menu-item">Opportunities</div>
+      </li>
+    </ul>
+    <ul class="row menu menu-2">
+        <li>
+          <div class="menu-item" [routerLink]="['/my-assets']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">All</div>
+        </li>
+        <li>
+          <div class="menu-item" [routerLink]="['/my-assets/savings']" routerLinkActive="active">Savings</div>
+        </li>
+        <li>
+          <div class="menu-item" [routerLink]="['/my-assets/p2p']" routerLinkActive="active">P2P</div>
+        </li>
+        <li>
+          <div class="menu-item" [routerLink]="['/my-assets/funds']" routerLinkActive="active">Funds</div>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>
